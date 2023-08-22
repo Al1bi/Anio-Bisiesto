@@ -14,7 +14,16 @@ describe("Es Bisiesto", () => {
   });
 
   it("El anio 2000 deberia considerarse como bisiesto", () => {
-    expect( esBisiesto(400) ).toEqual(true);
+    expect( esBisiesto(2000) ).toEqual(true);
   });
+
+  it("El anio 2100 no deberia considerarse como bisiesto", () => {
+    expect( esBisiesto(2100) ).toEqual(false);
+  });
+
+  it("El anio 1900 no deberia considerarse como bisiesto", () => {
+    expect( esBisiesto(1900) ).toEqual(false);
+  });
+
 
 });
