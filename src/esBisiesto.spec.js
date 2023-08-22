@@ -9,4 +9,12 @@ describe("Es Bisiesto", () => {
     expect( esBisiesto(5) ).toEqual(false);
   });
 
+  it("El anio 400 deberia considerarse como bisiesto", () => {
+    expect( esBisiesto(400) ).toEqual(true);
+  });
+
+  it("El anio 2000 deberia considerarse como bisiesto", () => {
+    expect( esBisiesto(400) ).toEqual(true);
+  });
+
 });
