@@ -25,5 +25,12 @@ describe("Es Bisiesto", () => {
     expect( esBisiesto(1900) ).toEqual(false);
   });
 
+  it("El anio 2008 deberia considerarse como bisiesto", () => {
+    expect( esBisiesto(2008) ).toEqual(true);
+  });
+
+  it("El anio 2016 deberia considerarse como bisiesto", () => {
+    expect( esBisiesto(2016) ).toEqual(true);
+  });
 
 });
